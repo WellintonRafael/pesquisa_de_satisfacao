@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Pesquisa de satisfação</title>
-</head>
-<body>
-    <h1>Pesquisa de satisfação</h1>
-        <p>{{username}}'s profile</p>
-</body>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pesquisa de satisfação</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename= 'style.css') }}">
+        <!link rel="stylesheet" href="{{ url_for('static', filename= 'logo.png') }}" type="image/x-icon">
+    </head>
+    <body>
+        <img class="logo" src="{{ url_for('static', filename= 'logo_hotel.png') }}">
+        <h1>Sobre a Barbearia Alura</h1>
+
+        <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+
+        <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
+
+        <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+
+        <h2>Destaques</h2>
+            <ul>
+                <li class="itens">Atendimento personalizado</li>
+                <li class="itens">Limpeza</li>
+                <li class="itens">Estacionamento fechado</li>
+                <li class="itens">Serviços de lavanderia</li>
+            </ul>
+    </body>
 </html>

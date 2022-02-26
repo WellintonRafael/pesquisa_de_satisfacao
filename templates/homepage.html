@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pesquisa de Satisfação</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'homepage.css') }}">
+
+</head>
+<body>
+    <header>
+        <div class="caixa">
+            <h1><img class="logo_hotel" src="{{ url_for('static', filename= 'logo_hotel.png') }}"></h1>
+            <nav>
+                <ul>
+                    <li><a href="https://www.hoteltertulios.com.br/">Home</a></li>
+                    <li><a href="https://www.hoteltertulios.com.br/blog" >Blog</a></li>
+                    <li><a href="https://www.hoteltertulios.com.br/#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2>Queremos saber sua opinião! </h2>
+        <p>Caro cliente e amigo, visando melhor atende-lo, criamos essa pesquisa de satisfação para você avaliar como foi sua experiência conosco.</p>
+        <p>Sua avaliação será anônima e servirá apenas para nos alertar de possíveis melhorias.</p>
+        <h3>Com notas de 0 até 10, o quanto você indicaria cada um de nossos serviços para um amigo ou parente?</h3>
+        <ol>
+            <li><h4>Atendimento</h4></li>
+            <li><h4>Limpeza</h4></li>
+            <li><h4>Conforto</h4></li>
+            <li><h4>Café da manhã</h4></li>
+            <li><h4>Internet</h4></li>
+            <li><h4>Custo-Benefício</h4></li>
+        </ol>
+            <h4>Fique à vontade para deixar uma mensagem de sugestões (opcional):</h4>
+            <textarea cols="100" rows="9"></textarea>
+        <label></label>
+    </main>
+   <footer>
+        <a class="facebook" href="https://www.facebook.com/HotelTertulios" target="_blank"><i aria-hidden="true"></i></a>
+        <p class="copyright">&copy; 2022 Hotel Tertulio's. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

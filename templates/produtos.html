@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'produtos.css') }}">
+
+</head>
+<body>
+    <header>
+        <div class="caixa">
+            <h1><img src="{{ url_for('static', filename= 'logo_alura.png') }}"></h1>
+            <nav>
+                    <ul>
+                        <li><a href="http://127.0.0.1:5000/user">Home</a></li>
+                        <li><a href="http://127.0.0.1:5000/user">Produto</a></li>
+                        <li><a href="http://127.0.0.1:5000/user">COntato</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <ul class="cards">
+            <li>
+                <h2>Cabelo</h2>
+                <img src="{{ url_for('static', filename= 'cabelo.jpg') }}">
+                <p class="descricao">Tesoura ou máquina</p>
+                <p class="preco">R$25,00</p>
+            </li>
+            <li>
+                <h2>Barba</h2>
+                <img src="{{ url_for('static', filename= 'barba.jpg') }}">
+                <p class="descricao">Barba personalizada</p>
+                <p class="preco">R$15,00</p>
+            </li>
+            <li>
+                <h2>Cabelo + Barba</h2>
+                <img src="{{ url_for('static', filename= 'cabelo+barba.jpg') }}">
+                <p class="descricao">Pacote completo</p>
+                <p class="preco">R$35,00</p>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+
+        <a class="facebook" href="https://www.facebook.com/HotelTertulios" target="_blank"><i aria-hidden="true"></i></a>
+        <p class="copyright">&copy; Copyright Hotel Tertulios - 2022</p>
+    </footer>
+</body>
+</html>

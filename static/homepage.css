@@ -1,0 +1,74 @@
+.logo_hotel {
+    width: 20%;
+    margin-left: 30px;
+    padding: 1% 0 1% 0;
+}
+
+header {
+    background: rgb(90,0,0);
+}
+
+.caixa {
+    z-index: 5;
+    box-sizing: border-box;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(to right,#000000, #8B0000);
+}
+
+nav {
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    padding: 1% 0 1% 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 50px;
+    padding: 5px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 21px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    transition: 0.3s all;
+}
+
+#logo_hotel_footer {
+    width: 30%;
+    margin: 35% 0 0;
+}
+
+footer {
+    background: url('bg.jpg');
+    text-align: center;
+    padding: 50px 0 20px;
+}
+
+.facebook: {
+    f09a
+}
+
+.copyright {
+    font-size: 12px;
+    color: rgb(255,255,255);
+    margin: 50px 0 0;
+}
+
+
+@media screen (max-width: 480px){
+    nav, .logo_hotel {
+        display: inline;
+        width: auto;
+        position: static;
+        text-align: center;
+    }
+}
