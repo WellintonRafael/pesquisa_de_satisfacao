@@ -1,11 +1,15 @@
 .logo_hotel {
-    width: 20%;
+    width: 300px;
     margin-left: 30px;
     padding: 1% 0 1% 0;
 }
 
 header {
     background: rgb(90,0,0);
+}
+
+main {
+    margin: 3% 3% 0 3%;
 }
 
 .caixa {
@@ -20,26 +24,45 @@ header {
 nav {
     position: absolute;
     top: 50px;
-    right: 40px;
+    right: 100px;
     padding: 1% 0 1% 0;
 }
 
 nav li {
     display: inline;
-    margin: 0 0 0 50px;
+    margin: 0 0 0 40px;
     padding: 5px;
 }
 
 nav a {
     text-transform: uppercase;
     color: #FFFFFF;
-    font-size: 21px;
+    font-size: 20px;
     text-decoration: none;
 }
 
 nav a:hover {
     text-decoration: underline;
     transition: 0.3s all;
+}
+
+.item-avaliado {
+    margin: 2em 0 0 0;
+    display: block;
+}
+
+.item {
+    display: block;
+    padding: 0 0 1em 2%;
+}
+
+textarea {
+    width: 70%
+}
+
+.botao {
+    display: block;
+    margin: 1em;
 }
 
 #logo_hotel_footer {
@@ -54,7 +77,8 @@ footer {
 }
 
 .facebook: {
-    f09a
+    \24D5;
+    text-align:center;
 }
 
 .copyright {
@@ -64,11 +88,35 @@ footer {
 }
 
 
-@media screen (max-width: 480px){
-    nav, .logo_hotel {
-        display: inline;
+@media screen and (max-width: 700px) {
+    header, .caixa, main, footer, copyright, .facebook {
         width: auto;
+    }
+    h1 {
+        width: 90%;
+        text-align: center;
+        margin: 0;
+
+    }
+    nav {
         position: static;
         text-align: center;
+        padding: 1% 0 1%;
+        margin: 0;
+        width: auto;
+
     }
+    nav li {
+        width: auto;
+        left: 0;
+        right: 0;
+        padding: 0;
+        margin: 0 3% 0 0;
+        text-align:center;
+    }
+
+    textarea {
+        width: 90%
+    }
+
 }

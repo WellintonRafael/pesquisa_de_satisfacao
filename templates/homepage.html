@@ -2,7 +2,9 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Pesquisa de Satisfação</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'reset.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename= 'homepage.css') }}">
 
 </head>
@@ -20,23 +22,52 @@
         </div>
     </header>
     <main>
-        <h2>Queremos saber sua opinião! </h2>
-        <p>Caro cliente e amigo, visando melhor atende-lo, criamos essa pesquisa de satisfação para você avaliar como foi sua experiência conosco.</p>
-        <p>Sua avaliação será anônima e servirá apenas para nos alertar de possíveis melhorias.</p>
-        <h3>Com notas de 0 até 10, o quanto você indicaria cada um de nossos serviços para um amigo ou parente?</h3>
-        <ol>
-            <li><h4>Atendimento</h4></li>
-            <li><h4>Limpeza</h4></li>
-            <li><h4>Conforto</h4></li>
-            <li><h4>Café da manhã</h4></li>
-            <li><h4>Internet</h4></li>
-            <li><h4>Custo-Benefício</h4></li>
-        </ol>
-            <h4>Fique à vontade para deixar uma mensagem de sugestões (opcional):</h4>
-            <textarea cols="100" rows="9"></textarea>
-        <label></label>
+        <h1 class="titulo-principal">Sua opinião é muito importante para nós!</h1>
+        <h2 class="titulo-pergunta">Indique o quanto ficou satisfeito com cada um de nossos serviços.</h2>
+        <form>
+            <ol class="lista">
+                <li class="item-avaliado"><h3>Atendimento</h3></li>
+                    <label class="item" for="radio-muito_satisfeito"><input type="radio" name="atendimento" value="muito_satisfeito">Muito satisfeito</label>
+                    <label class="item" for="radio-satisfeito"><input type="radio" name="atendimento" value="satisfeito">Satisfeito</label>
+                    <label class="item" for="radio-pouco_satisfeito"><input type="radio" name="atendimento" value="pouco_satisfeito">Pouco satisfeito</label>
+                    <label class="item" for="radio-nada_satisfeito"><input type="radio" name="atendimento" value="nada_satisfeito">Nada satisfeito</label>
+
+                <li class="item-avaliado"><h3>Limpeza</h3></li>
+                    <label class="item" for="radio-muito_satisfeito"><input type="radio" name="limpeza" value="muito_satisfeito">Muito satisfeito</label>
+                    <label class="item" for="radio-satisfeito"><input type="radio" name="limpeza" value="satisfeito">Satisfeito</label>
+                    <label class="item" for="radio-pouco_satisfeito"><input type="radio" name="limpeza" value="pouco_satisfeito">Pouco satisfeito</label>
+                    <label class="item" for="radio-nada_satisfeito"><input type="radio" name="limpeza" value="nada_satisfeito">Nada satisfeito</label>
+
+                <li class="item-avaliado"><h3>Conforto</h3></li>
+                    <label class="item" for="radio-muito_satisfeito"><input type="radio" name="conforto" value="muito_satisfeito">Muito satisfeito</label>
+                    <label class="item" for="radio-satisfeito"><input type="radio" name="conforto" value="satisfeito">Satisfeito</label>
+                    <label class="item" for="radio-pouco_satisfeito"><input type="radio" name="conforto" value="pouco_satisfeito">Pouco satisfeito</label>
+                    <label class="item" for="radio-nada_satisfeito"><input type="radio" name="conforto" value="nada_satisfeito">Nada satisfeito</label>
+
+                <li class="item-avaliado" ><h3>Café da manhã</h3></li>
+                    <label class="item" for="radio-muito_satisfeito"><input type="radio" name="cafe_da_manha" value="muito_satisfeito">Muito satisfeito</label>
+                    <label class="item" for="radio-satisfeito"><input type="radio" name="cafe_da_manha" value="satisfeito">Satisfeito</label>
+                    <label class="item" for="radio-pouco_satisfeito"><input type="radio" name="cafe_da_manha" value="pouco_satisfeito">Pouco satisfeito</label>
+                    <label class="item" for="radio-nada_satisfeito"><input type="radio" name="cafe_da_manha" value="nada_satisfeito">Nada satisfeito</label>
+
+                <li class="item-avaliado"><h3>Internet</h3></li>
+                    <label class="item" for="radio-muito_satisfeito"><input type="radio" name="internet" value="muito_satisfeito">Muito satisfeito</label>
+                    <label class="item" for="radio-satisfeito"><input type="radio" name="internet" value="satisfeito">Satisfeito</label>
+                    <label class="item" for="radio-pouco_satisfeito"><input type="radio" name="internet" value="pouco_satisfeito">Pouco satisfeito</label>
+                    <label class="item" for="radio-nada_satisfeito"><input type="radio" name="internet" value="nada_satisfeito">Nada satisfeito</label>
+
+                <li class="item-avaliado"><h3>Custo-Benefício</h3></li>
+                    <label class="item" for="radio-muito_satisfeito"><input type="radio" name="custo_beneficio" value="muito_satisfeito">Muito satisfeito</label>
+                    <label class="item" for="radio-satisfeito"><input type="radio" name="custo_beneficio" value="satisfeito">Satisfeito</label>
+                    <label class="item" for="radio-pouco_satisfeito"><input type="radio" name="custo_beneficio" value="pouco_satisfeito">Pouco satisfeito</label>
+                    <label class="item" for="radio-nada_satisfeito"><input type="radio" name="custo_beneficio" value="nada_satisfeito">Nada satisfeito</label>
+            </ol>
+            <h4 class="item-avaliado">Sugestões ou comentários (opcional):</h4>
+            <textarea rows="5"></textarea>
+            <input class="botao" type="submit" value="Enviar Pesquisa">
+        </form>
     </main>
-   <footer>
+    <footer>
         <a class="facebook" href="https://www.facebook.com/HotelTertulios" target="_blank"><i aria-hidden="true"></i></a>
         <p class="copyright">&copy; 2022 Hotel Tertulio's. Todos os direitos reservados.</p>
     </footer>
