@@ -121,6 +121,8 @@ footer {
 }
 
 .whatsapp {
+    text-align: center;
+    color: #FFFFFF;
     position: fixed;
     width: 50px;
     height: 50px;
@@ -167,4 +169,5 @@ footer {
     textarea {
         width: 90%
     }
+
 }
