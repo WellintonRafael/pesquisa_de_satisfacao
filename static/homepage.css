@@ -5,7 +5,6 @@ body {
 .logo_hotel {
     width: 380px;
     margin: 0 0 0 2%;
-
 }
 
 header {
@@ -125,15 +124,11 @@ footer {
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 35px;
-    right: 30px;
+    bottom: 34px;
+    right: 20px;
     background-color: #25d366;
-    color: #FFF;
-    border-radius: 45px;
-    text-align: center;
-    font-size: 30px;
+    border-radius: 35px;
 }
-
 
 @media screen and (max-width: 715px) {
     .logo_hotel {
@@ -143,7 +138,6 @@ footer {
     main, footer, copyright, .facebook {
         width: auto;
     }
-
 
     .titulo-principal, .titulo-pergunta {
         width: 100%;
@@ -155,7 +149,7 @@ footer {
     nav {
         position: static;
         text-align: center;
-        padding: 1% 0 1%;
+        padding: 1% 0 1% 0;
         margin: 0;
         width: auto;
 
@@ -164,8 +158,8 @@ footer {
         width: auto;
         left: 0;
         right: 0;
-        padding: 0;
-        margin: 0 5% 0 5%;
+        padding: 0 12% 0 0;
+        margin: 0;
         text-align:center;
     }
 
