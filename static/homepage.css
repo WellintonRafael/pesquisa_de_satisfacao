@@ -1,11 +1,16 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .logo_hotel {
-    width: 300px;
-    margin-left: 30px;
-    padding: 1% 0 1% 0;
+    width: 380px;
+    margin: 0 0 0 2%;
+
 }
 
 header {
     background: rgb(90,0,0);
+    margin: 0 0 0 0;
 }
 
 main {
@@ -13,25 +18,20 @@ main {
 }
 
 .caixa {
-    z-index: 5;
-    box-sizing: border-box;
-    top: 0px;
-    left: 0;
-    width: 100%;
     background-image: linear-gradient(to right,#000000, #8B0000);
 }
 
 nav {
     position: absolute;
     top: 50px;
-    right: 100px;
+    right: 4%;
     padding: 1% 0 1% 0;
 }
 
 nav li {
     display: inline;
-    margin: 0 0 0 40px;
-    padding: 5px;
+    margin: 0 0 0 20px;
+    padding: 10px;
 }
 
 nav a {
@@ -43,26 +43,37 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-    transition: 0.3s all;
+}
+
+.titulo-principal, .titulo-pergunta {
+    line-height: 1.3em;
 }
 
 .item-avaliado {
-    margin: 2em 0 0 0;
+    margin: 2.5em 0 0 0;
     display: block;
 }
 
 .item {
     display: block;
-    padding: 0 0 1em 2%;
+    padding: 0 0 0.6em 3%;
 }
 
 textarea {
-    width: 70%
+    width: 70%;
+    margin: 1% 0 0 0;
 }
 
 .botao {
     display: block;
-    margin: 1em;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 3px #720404;
+    background-color: #720404;
+    border: 0;
+    padding: 14px 20px;
+    margin: 4% 0 2% 0;
+    border-radius: 12px 0 12px 0;
 }
 
 #logo_hotel_footer {
@@ -88,14 +99,21 @@ footer {
 }
 
 
-@media screen and (max-width: 700px) {
-    header, .caixa, main, footer, copyright, .facebook {
+@media screen and (max-width: 715px) {
+    .logo_hotel {
+        width: 80%;
+    }
+
+    main, footer, copyright, .facebook {
         width: auto;
     }
-    h1 {
-        width: 90%;
+
+
+    .titulo-principal, .titulo-pergunta {
+        width: 100%;
         text-align: center;
-        margin: 0;
+        margin: 3% 0 0 0;
+        padding: 3% 0 0 0;
 
     }
     nav {
@@ -111,12 +129,11 @@ footer {
         left: 0;
         right: 0;
         padding: 0;
-        margin: 0 3% 0 0;
+        margin: 0 5% 0 5%;
         text-align:center;
     }
 
     textarea {
         width: 90%
     }
-
 }
