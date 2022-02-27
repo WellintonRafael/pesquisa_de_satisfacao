@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename= 'reset.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename= 'homepage.css') }}">
     <link href="{{ 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' }}" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/6e6ea9e421.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -24,6 +24,7 @@
     </header>
     <main>
         <h1 class="titulo-principal">Sua opinião é muito importante para nós!</h1>
+        <hr>
         <h2 class="titulo-pergunta">Indique o quanto ficou satisfeito com cada um de nossos serviços.</h2>
         <form>
             <ol class="lista">
@@ -62,16 +63,29 @@
                     <label class="item" for="radio-satisfeito"><input type="radio" name="custo_beneficio" value="satisfeito">Satisfeito</label>
                     <label class="item" for="radio-pouco_satisfeito"><input type="radio" name="custo_beneficio" value="pouco_satisfeito">Pouco satisfeito</label>
                     <label class="item" for="radio-nada_satisfeito"><input type="radio" name="custo_beneficio" value="nada_satisfeito">Nada satisfeito</label>
+
+                <li class="item-avaliado"><h3>Localização</h3></li>
+                    <label class="item" for="radio-muito_satisfeito"><input type="radio" name="localizacao" value="muito_satisfeito">Muito satisfeito</label>
+                    <label class="item" for="radio-satisfeito"><input type="radio" name="localizacao" value="satisfeito">Satisfeito</label>
+                    <label class="item" for="radio-pouco_satisfeito"><input type="radio" name="localizacao" value="pouco_satisfeito">Pouco satisfeito</label>
+                    <label class="item" for="radio-nada_satisfeito"><input type="radio" name="localizacao" value="nada_satisfeito">Nada satisfeito</label>
+
             </ol>
             <h4 class="item-avaliado">Sugestões ou comentários (opcional):</h4>
-            <textarea rows="5"></textarea>
+            <textarea rows="5" placeholder="Digite aqui sua mensagem!"></textarea>
             <input class="botao" type="submit" value="Enviar Pesquisa">
         </form>
     </main>
     <footer>
-        <a class="facebook" href="https://www.facebook.com/HotelTertulios" target="_blank"><i aria-hidden="true"></i></a>
+        <div class="sm">
+            <a href="https://www.facebook.com/HotelTertulios"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/hoteltertuliosrc/"><i class="fa fa-instagram"></i></a>
+            <a href="https://t.me/Hotel_Tertulios"><i class="fa fa-telegram"></i></a>
+        </div>
+        <a class="whatsapp" href="https://api.whatsapp.com/send?phone=+55019996117400&amp;
+            text=Quero fazer uma reserva!" >
+            <i style="margin-top:16px" class="fa fa-whatsapp"></i></a>
         <p class="copyright">&copy; 2022 Hotel Tertulio's. Todos os direitos reservados.</p>
     </footer>
-
 </body>
 </html>

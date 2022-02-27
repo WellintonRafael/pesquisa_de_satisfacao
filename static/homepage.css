@@ -45,8 +45,29 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.titulo-principal, .titulo-pergunta {
+.lista {
+    margin-left: 5%;
+}
+
+.titulo-principal {
     line-height: 1.3em;
+    text-align: center;
+}
+
+.titulo-pergunta {
+    line-height: 1.3em;
+    margin-left: 3%
+}
+
+hr {
+    height: 4px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    background: #720404;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 0;
 }
 
 .item-avaliado {
@@ -62,6 +83,7 @@ nav a:hover {
 textarea {
     width: 70%;
     margin: 1% 0 0 0;
+    font-size: 16px;
 }
 
 .botao {
@@ -87,15 +109,29 @@ footer {
     padding: 50px 0 20px;
 }
 
-.facebook: {
-    \24D5;
-    text-align:center;
+.fa {
+    color: #B44A4A;
+    font-size: 25px;
+    padding: 0 10px 0 10px;
 }
 
 .copyright {
     font-size: 12px;
-    color: rgb(255,255,255);
+    color: #B44A4A;
     margin: 50px 0 0;
+}
+
+.whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 35px;
+    right: 30px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 45px;
+    text-align: center;
+    font-size: 30px;
 }
 
 
