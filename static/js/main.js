@@ -6,10 +6,8 @@ function enviarPesquisa() {
     var internet = document.querySelectorAll('.internet')
     var custo_beneficio = document.querySelectorAll('.custo_beneficio')
     var localizacao = document.querySelectorAll('.localizacao')
-
     var listaDeItens = [atendimento, limpeza, conforto, cafe, internet, custo_beneficio, localizacao]
     var votacao = new Array()
-
     for (let contador1 = 0; contador1 < listaDeItens.length; contador1++) {
         for (let contador2 = 0; contador2 < listaDeItens[contador1].length; contador2++){
             if (listaDeItens[contador1][contador2].checked) {
