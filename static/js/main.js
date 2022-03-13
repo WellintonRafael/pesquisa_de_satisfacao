@@ -26,10 +26,9 @@ function enviarPesquisa() {
     // Regex para encontrar os resultados das votações na lista "votos"
     for (var contRegex = 0; contRegex < votos.length; contRegex++) {
         var encontrarAv = votos[contRegex].match(regexAvaliacao)
-        strAv = encontrarAv.toString()
-        replace = strAv.replace('-','')
-        listaAvaliacao.push(replace)
+        var strAv = encontrarAv.toString()
+        var replaced = strAv.replaced('-','')
+        listaAvaliacao.push(replaced)
     }
-    window.alert(`${listaAvaliacao}`)
 }
 

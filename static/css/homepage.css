@@ -69,8 +69,7 @@ nav a:hover {
     margin-left: 3%
 }
 
-.item-atendimento, item-limpeza, item-conforto, item-cafe_da_manha,
-    item-internet, item-custo_beneficio, item-localizacao {
+.item-avaliado {
     margin: 2.5em 0 0 0;
     display: block;
 }
@@ -78,6 +77,14 @@ nav a:hover {
 .item {
     display: block;
     padding: 0 0 0.6em 3%;
+}
+
+#nome {
+    width: 50%;
+}
+
+#nº {
+    margin-right: 10px;
 }
 
 textarea {
@@ -89,13 +96,14 @@ textarea {
 .botao {
     display: block;
     text-transform: uppercase;
-    color: #fff;
+    color: #ffffff;
     text-shadow: 0 0 3px #720404;
     background-color: #720404;
     border: 0;
     padding: 14px 20px;
     margin: 2% 0 4% 0;
     border-radius: 12px 0 12px 0;
+    transition: all 0.5s;
 }
 
 #logo_hotel_footer {
@@ -137,6 +145,10 @@ footer {
     .logo_hotel {
         width: 75%;
         margin: 0 6%;
+    }
+
+    #nome {
+        width: 75%;
     }
 
     main, footer, copyright {

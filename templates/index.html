@@ -29,48 +29,53 @@
             <h2 class="titulo-pergunta">Indique o quanto ficou satisfeito com cada um dos nossos serviços.</h2>
             <form name="myform">
                 <ol class="lista" onsubmit="return salvarVotos()">
-                    <li class="item-atendimento"><h3>Atendimento</h3></li>
+                    <li class="item-avaliado"><h3>Atendimento</h3></li>
                         <label class="item" for="atendimento-ms"><input class="atendimento" type="radio" name="atendimento" id="atendimento-ms" required>Muito satisfeito</label>
                         <label class="item" for="atendimento-s"><input class="atendimento" type="radio" name="atendimento" id="atendimento-s">Satisfeito</label>
                         <label class="item" for="atendimento-ps"><input class="atendimento" type="radio" name="atendimento" id="atendimento-ps">Pouco satisfeito</label>
                         <label class="item" for="atendimento-i"><input class="atendimento" type="radio" name="atendimento" id="atendimento-i">Insatisfeito</label>
 
-                    <li class="item-limpeza"><h3>Limpeza</h3></li>
+                    <li class="item-avaliado"><h3>Limpeza</h3></li>
                         <label class="item" for="limpeza-ms"><input class="limpeza" type="radio" name="limpeza" id="limpeza-ms" required>Muito satisfeito</label>
                         <label class="item" for="limpeza-s"><input class="limpeza" type="radio" name="limpeza" id="limpeza-s">Satisfeito</label>
                         <label class="item" for="limpeza-ps"><input class="limpeza" type="radio" name="limpeza" id="limpeza-ps">Pouco satisfeito</label>
                         <label class="item" for="limpeza-i"><input class="limpeza" type="radio" name="limpeza" id="limpeza-i">Insatisfeito</label>
 
-                    <li class="item-conforto"><h3>Conforto</h3></li>
+                    <li class="item-avaliado"><h3>Conforto</h3></li>
                         <label class="item" for="conforto-ms"><input class="conforto" type="radio" name="conforto" id="conforto-ms" required>Muito satisfeito</label>
                         <label class="item" for="conforto-s"><input class="conforto" type="radio" name="conforto" id="conforto-s">Satisfeito</label>
                         <label class="item" for="conforto-ps"><input class="conforto" type="radio" name="conforto" id="conforto-ps">Pouco satisfeito</label>
                         <label class="item" for="conforto-i"><input class="conforto" type="radio" name="conforto" id="conforto-i">Insatisfeito</label>
 
-                    <li class="item-cafe" ><h3>Café da manhã</h3></li>
+                    <li class="item-avaliado" ><h3>Café da manhã</h3></li>
                         <label class="item" for="cafe-ms"><input class="cafe" type="radio" name="cafe" id="cafe-ms" required>Muito satisfeito</label>
                         <label class="item" for="cafe-s"><input class="cafe" type="radio" name="cafe" id="cafe-s">Satisfeito</label>
                         <label class="item" for="cafe-ps"><input class="cafe" type="radio" name="cafe" id="cafe-ps">Pouco satisfeito</label>
                         <label class="item" for="cafe-i"><input class="cafe" type="radio" name="cafe" id="cafe-i">Insatisfeito</label>
 
-                    <li class="item-internet"><h3>Internet</h3></li>
+                    <li class="item-avaliado"><h3>Internet</h3></li>
                         <label class="item" for="internet-ms"><input class="internet" type="radio" name="internet" id="internet-ms" required>Muito satisfeito</label>
                         <label class="item" for="internet-s"><input class="internet" type="radio" name="internet" id="internet-s">Satisfeito</label>
                         <label class="item" for="internet-ps"><input class="internet" type="radio" name="internet" id="internet-ps">Pouco satisfeito</label>
                         <label class="item" for="internet-i"><input class="internet" type="radio" name="internet" id="internet-i">Insatisfeito</label>
 
-                    <li class="item-custo_beneficio"><h3>Custo-Benefício</h3></li>
+                    <li class="item-avaliado"><h3>Custo-Benefício</h3></li>
                         <label class="item" for="custo_beneficio-ms"><input class="custo_beneficio" type="radio" name="custo_beneficio" id="custo_beneficio-ms" required>Muito satisfeito</label>
                         <label class="item" for="custo_beneficio-s"><input class="custo_beneficio" type="radio" name="custo_beneficio" id="custo_beneficio-s">Satisfeito</label>
                         <label class="item" for="custo_beneficio-ps"><input class="custo_beneficio" type="radio" name="custo_beneficio" id="custo_beneficio-ps">Pouco satisfeito</label>
                         <label class="item" for="custo_beneficio-i"><input class="custo_beneficio" type="radio" name="custo_beneficio" id="custo_beneficio-i">Insatisfeito</label>
 
-                    <li class="item-localizacao"><h3>Localização</h3></li>
+                    <li class="item-avaliado"><h3>Localização</h3></li>
                         <label class="item" for="localizacao-ms"><input class="localizacao" type="radio" name="localizacao" id="localizacao-ms" required>Muito satisfeito</label>
                         <label class="item" for="localizacao-s"><input class="localizacao" type="radio" name="localizacao" id="localizacao-s">Satisfeito</label>
                         <label class="item" for="localizacao-ps"><input class="localizacao" type="radio" name="localizacao" id="localizacao-ps">Pouco satisfeito</label>
                         <label class="item" for="localizacao-i"><input class="localizacao" type="radio" name="localizacao" id="localizacao-i">Insatisfeito</label>
 
+                    <li class="item-avaliado"><h3>Número do apartamento:</h3></li>
+                        <label id="nº">Nº</label><input id="num_apto" type="number" min="2" max="43" required>
+
+                    <li class="item-avaliado"><h3>Nome (Opcional):</h3></li>
+                        <input id="nome" type="name">
                 </ol>
                 <h4 class="item-avaliado">Sugestões ou comentários (opcional):</h4>
                 <textarea rows="5" placeholder="Digite aqui sua mensagem!"></textarea>
