@@ -33,3 +33,4 @@ function enviarPesquisa() {
     
     fetch("/pesquisa?" + new URLSearchParams({listaAvaliacao}))
 }
+ 
