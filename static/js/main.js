@@ -30,5 +30,6 @@ function enviarPesquisa() {
         var replaced = strAv.replace('-','')
         listaAvaliacao.push(replaced)
     }
-}
 
+    fetch("/pesquisa?" + new URLSearchParams({listaAvaliacao}))
+}
