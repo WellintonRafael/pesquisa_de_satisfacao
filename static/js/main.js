@@ -27,9 +27,8 @@ function enviarPesquisa() {
     for (var contRegex = 0; contRegex < votos.length; contRegex++) {
         var encontrarAv = votos[contRegex].match(regexAvaliacao)
         var strAv = encontrarAv.toString()
-        var replaced = strAv.replace('-','')
+        var replaced = strAv.replaced('-','')
         listaAvaliacao.push(replaced)
     }
-
-    fetch("/pesquisa?" + new URLSearchParams({listaAvaliacao}))
 }
+
