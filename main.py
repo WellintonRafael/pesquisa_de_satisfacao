@@ -39,8 +39,6 @@ def pesquisa_create():
 #     return 'test'
 
 if __name__ == '__main__':
-<<<<<<< HEAD
     app.run(debug=True)
-=======
-    app.run(debug=True)
->>>>>>> github/main
+
+

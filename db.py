@@ -1,12 +1,7 @@
 import psycopg2 as db
-from sqlalchemy import create_engine
 
-engine = create_engine("postgresql://postgres:welL2801@localhost:5432/teste")
-
-<<<<<<< HEAD
-=======
 # connection = db.connect(user="postgres", password="welL2801", host="localhost", port="5432", database="teste")
->>>>>>> github/main
+
 connection = db.connect(user="qixgziaqwjfnxq", password="45db650b13d205b6b4cd198dfa8767748ddd28f65a2f2c7a62d9c77cebd505ee", host="ec2-54-158-26-89.compute-1.amazonaws.com", port="5432", database="d5k8f7g7cmuq2g")
 
 
