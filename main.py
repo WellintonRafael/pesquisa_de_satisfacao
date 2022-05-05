@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
-from db import create_database
 from pesquisa import store
+# from db import create_database
+
 
 app = Flask("__name__")
 
@@ -10,11 +11,6 @@ def homepage():
     return render_template('index.html')
 
 
-@app.route('/create_db')
-def create_db():
-    return create_database()
-
-
 @app.route('/pesquisa', methods=['GET'])
 def pesquisa_create():
     data = request.args['listaAvaliacao']
@@ -22,6 +18,11 @@ def pesquisa_create():
     if result:
         return '1'
     return '0'
+
+
+# @app.route('/create_db')
+# def create_db():
+#     return create_database()
 
 
 # @app.route('/pesquisa/{id}', methods=['PUT'])

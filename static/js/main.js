@@ -9,6 +9,18 @@ function enviarPesquisa() {
     var listaDeItens = [atendimento, limpeza, conforto, cafe, internet, custo_beneficio, localizacao]
     var votos = new Array()
 
+
+    var nome_cliente = document.getElementById('nome').value;
+    var num_apto = document.getElementById('num_apto').value;
+
+    var sugestao = document.getElementById('sugestao').value;
+
+//    var nome_cliente = input_nome.value
+//    var num_apto = input_num.value
+
+
+
+
     // Iterador para os RadioButtons.
     // Acrescenta cada item selecionado na lista "votos"
     for (let contador1 = 0; contador1 < listaDeItens.length; contador1++) {
@@ -23,6 +35,10 @@ function enviarPesquisa() {
     var listaItem = new Array()
     var listaAvaliacao = new Array()
 
+    listaAvaliacao.push(nome_cliente)
+    listaAvaliacao.push(num_apto)
+
+
     // Regex para encontrar os resultados das votações na lista "votos"
     for (var contRegex = 0; contRegex < votos.length; contRegex++) {
         var encontrarAv = votos[contRegex].match(regexAvaliacao)
@@ -31,5 +47,11 @@ function enviarPesquisa() {
         listaAvaliacao.push(replaced)
     }
 
+    listaAvaliacao.push(sugestao)
+
     fetch("/pesquisa?" + new URLSearchParams({listaAvaliacao}))
+    console.log(listaAvaliacao)
+    alert('Pesquisa enviada com sucesso! Muito obrigado por participar. :)')
+    document.location.reload(true)
+
 }

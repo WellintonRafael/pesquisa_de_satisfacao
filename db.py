@@ -1,7 +1,5 @@
 import psycopg2 as db
 
-# connection = db.connect(user="postgres", password="welL2801", host="localhost", port="5432", database="teste")
-
 connection = db.connect(user="qixgziaqwjfnxq", password="45db650b13d205b6b4cd198dfa8767748ddd28f65a2f2c7a62d9c77cebd505ee", host="ec2-54-158-26-89.compute-1.amazonaws.com", port="5432", database="d5k8f7g7cmuq2g")
 
 

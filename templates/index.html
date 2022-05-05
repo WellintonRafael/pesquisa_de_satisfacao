@@ -72,14 +72,14 @@
                         <label class="item" for="localizacao-i"><input class="localizacao" type="radio" name="localizacao" id="localizacao-i">Insatisfeito</label>
 
                     <li class="item-avaliado"><h3>Número do apartamento:</h3></li>
-                        <label id="nº">Nº</label><input id="num_apto" type="number" min="2" max="43" required>
+                        <label >Nº</label><input id="num_apto" type="number" min="2" max="43" required>
 
                     <li class="item-avaliado"><h3>Nome (Opcional):</h3></li>
                         <input id="nome" type="name">
                 </ol>
                 <h4 class="item-avaliado">Sugestões ou comentários (opcional):</h4>
-                <textarea rows="5" placeholder="Digite aqui sua mensagem!"></textarea>
-                <input class="botao" type="button" value="Enviar Pesquisa" onclick="event.preventDefault(); enviarPesquisa()">
+                <textarea id="sugestao" rows="5" maxlength="200" placeholder="Digite aqui sua mensagem... Máx. 200 caracteres."></textarea>
+                <input class="botao" type="button" value="Enviar Pesquisa" onclick="enviarPesquisa()">
             </form>
         </main>
         <footer>
